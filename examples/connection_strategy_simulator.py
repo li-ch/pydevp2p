@@ -1,6 +1,6 @@
 """
 installation:
-    git clone https://github.com/li-ch/pydevp2p.git
+    git clone https://github.com/ethereum/pydevp2p.git
     python setup.py develop
     pip install statistics networkx matplotlib ethereum
 

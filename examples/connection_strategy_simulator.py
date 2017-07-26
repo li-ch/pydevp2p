@@ -1,19 +1,16 @@
 """
 installation:
-
-    git clone git@github.com:heikoheiko/pydevp2p.git
-    git co sha3id
+    git clone https://github.com/li-ch/pydevp2p.git
     python setup.py develop
-    pip install statistics networkx matplotlib
+    pip install statistics networkx matplotlib ethereum
 
 usage:
     cd devp2p/tests/
     python test_connections_stratgy.py <num_nodes>
 
-    you probably want to adjust  `min_peer_options` and `klasses`
-    in the `main` function (end of file)
+    # Adjust  `min_peer_options` and `klasses` in the `main` (end of file)
 
-implementing strategies:
+implementing new CNode:
     inherit form CNodeBase and implement .setup_targets()
     add your class to `klasses` in the `main` function.
 """

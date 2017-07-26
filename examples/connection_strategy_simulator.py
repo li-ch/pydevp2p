@@ -21,7 +21,7 @@ implementing strategies:
 import time
 import operator
 import devp2p.kademlia
-from test_kademlia_protocol import test_many, get_wired_protocol
+from devp2p.tests.test_kademlia_protocol import test_many, get_wired_protocol
 from collections import OrderedDict
 import random
 import statistics
@@ -491,8 +491,8 @@ def main(num_nodes):
     print_results(results)
 
 if __name__ == '__main__':
-    # import pyethereum.slogging
-    # pyethereum.slogging.configure(config_string=':debug')
+    import ethereum.slogging
+    ethereum.slogging.configure(config_string=':debug')
     import sys
     if not len(sys.argv) == 2:
         print 'usage:%s <num_nodes>' % sys.argv[0]
